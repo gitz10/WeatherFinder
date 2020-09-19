@@ -8,11 +8,14 @@
     <div class="wrap">
       <label class="db padB10 fb" for="city">Select a City: </label>
       <input type="text"  placeholder="City Name" id="city" />
-      <div class="posRel">
+      <div class="btnWrap">
+        <button type="button" id="fetchBtn" onclick="weatherApp.fetchResults()">Fetch Weather</button>
+      </div>
+     <!-- <div class="posRel">
         <div id="suggestions" class="suggestions">
           <div class="suggestionItem">No Info available!</div>
         </div>
-      </div>
+      </div>-->
       <div id="selectedCityInfo">
         <div>
           <span class="w50in fb">City:</span>
@@ -28,7 +31,7 @@
         </div>
       </div>
       <div class="btnWrap">
-        <button type="button" id="resetBtn" >Reset</button>
+        <button type="button" id="resetBtn" onclick="weatherApp.reset()">Reset</button>
       </div>
     </div>
   </body>
